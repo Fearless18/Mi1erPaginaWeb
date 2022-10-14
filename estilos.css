@@ -1,14 +1,44 @@
 body {
-	background-color: #dfd;
+	background-color: #99B4BF;
+	font-family: 'Open Sans', sans-serif;
+	color: #184A8C;
 }
 img {
 	max-width: 100%;
 }
-
+a{
+	color: #184A8C;
+}
+h1{
+	font-family: 'Fuzzy Bubbles', cursive;
+	font-size: 4em;
+	color: #273459;
+}
+h2{
+	color: #0069A5;
+}
 .quitar-float {
 	float: none;
+}
+
+.centrado {
+	margin: 0 auto;
 }
 
 .espacio-arriba {
 	margin-top: 40px;
 }
+
+.texto-centrado {
+	text-align: center;
+}
+
+.texto-azul {
+	color:  blue;
+}
+
+.texto-rojo {
+	color: red;
+}
+
+
