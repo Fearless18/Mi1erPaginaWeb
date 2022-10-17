@@ -3,17 +3,21 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	color: #184A8C;
 }
+
 img {
 	max-width: 100%;
 }
+
 a{
 	color: #184A8C;
 }
+
 h1{
 	font-family: 'Fuzzy Bubbles', cursive;
 	font-size: 4em;
 	color: #273459;
 }
+
 h2{
 	color: #0069A5;
 }
@@ -41,4 +45,19 @@ h2{
 	color: red;
 }
 
+.sin-decoracion{
+	text-decoration: none;
+}
 
+.no-lista li{
+	list-style-type: none;
+}
+
+.c-gris{
+	background-color: #ddd;
+}
+.lista-horizontal{
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
