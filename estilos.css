@@ -17,6 +17,9 @@ h1{
 	font-size: 4em;
 	color: #273459;
 }
+nav{
+	max-width: 90%;
+}
 
 h2{
 	color: #0069A5;
