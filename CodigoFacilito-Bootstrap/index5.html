@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-md-2"><a href="index.html">Página 1</a></div>
+		<div class="col-md-2"><a href="index2.html">Página 2</a></div>
+		<div class="col-md-2"><a href="index3.html">Página 3</a></div>
+		<div class="col-md-2"><a href="index4.html">Página 4</a></div>
+		<div class="col-md-2">Página 5</div>
+		<div class="col-md-2"><a href="index6.html">Página 6</a></div>
+	</div><br/><br/>
+	<div class="row-fluid">
+		<div class="col-md-12"><br><br>
+			<div class="page-header">
+				<h1>Popover</h1>
+			</div> 
+		</div>
+		<div class="col-md-12">
+			<a href="#" class="btn mypop">Esto es un popover</a>
+
+		</div>
+		<br/><br/>
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>Modals</h1>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  			<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">Título del modal
+						<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+						<div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio veritatis, maxime in placeat recusandae explicabo voluptas velit repudiandae ab tenetur cupiditate qui, nesciunt ipsa aperiam, assumenda itaque. Quis porro, doloribus!</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+							<button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+						</div>
+					</div><!-- /.modal-content -->
+	  			</div><!-- /.modal-dialog -->
+  			</div>	<!-- /.modal -->
+			<a href="#myModal" data-toggle="modal" data-target="#myModal" class="btn">Modal</a>
+
+			<div class="modal fade" id="myModal2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel">
+	  			<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">Bienvenido!
+						<button type="button" class="close" data-dismiss="modal">&times;</button></div>
+						<div class="modal-body">Hola!</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-info" data-dismiss="modal">Gracias campeón!</button>
+							
+						</div>
+					</div><!-- /.modal-content -->
+	  			</div><!-- /.modal-dialog -->
+  			</div>	<!-- /.modal -->
+		</div> <!-- columnas 12 -->
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-12"><br>
+			<div class="page-header">
+				<h1>Tabs</h1>
+			</div> 
+		</div>
+		<div class="col-md-12">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#about">About</a></li>
+				<li><a data-toggle="tab" href="#contact">Contact</a></li>
+				<li><a data-toggle="tab" href="#profile">Profile</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="home" class="tab-pane active"><h3>Home</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique quasi harum.</div>
+				<div id="about" class="tab-pane"><h3>About</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error non perspiciatis.</div>
+				<div id="contact" class="tab-pane"><h3>Contact</h3>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error non perspiciatis.</div>
+				<div id="profile" class="tab-pane"><h3>Profile</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error non perspiciatis. Lorem ipsum dolor sit amet.</div>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-12"><br><br>
+			<div class="page-header">
+				<h1>Tooltips</h1>
+			</div> 
+		</div>
+		<div class="col-md-12 text-center">
+			<a href="#" class="btn" data-toggle="tooltip" data-placement="left" title="Hola soy un tooltip">texto ejemplo</a>
+			<a href="#" class="btn" data-toggle="tooltip" data-placement="top" title="Hola soy un tooltip">texto ejemplo</a>
+			<a href="#" class="btn" data-toggle="tooltip" data-placement="bottom" title="Hola soy un tooltip">texto ejemplo</a>
+			<a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Hola soy un tooltip">texto ejemplo</a>
+		</div>	
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-12"><br><br>
+			<div class="page-header">
+				<h1>Radio button / Checkbox</h1>
+			</div> 
+		</div>
+		<div class="col-md-6">
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="checkbox" autocomplete="off"> Checkbox 2
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="checkbox" autocomplete="off"> Checkbox 3
+			  </label>
+			</div>
+	
+		</div>
+		<div class="col-md-6">
+			<div class="btn-group" data-toggle="buttons-radio">
+				<div class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-primary active">
+				    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+				  </label>
+				</div>
+			</div>
+		</div>
+	<div class="row-fluid">
+		<div class="col-md-12"><br><br>
+			<div class="page-header">
+				<h1>Colapsar / Acordeón</h1>
+			</div> 
+		</div>
+		<div class="col-md-12">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title">
+			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Collapsible Group Item #1
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci a, quae quod molestiae labore quia porro quasi quibusdam alias dolorum voluptatum impedit amet aspernatur. Deserunt rem maxime optio quo odit.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Collapsible Group Item #2
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			      <div class="panel-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Collapsible Group Item #3
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+			        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores fugiat asperiores, eveniet quis delectus? Inventore aliquam cum obcaecati alias accusantium optio natus, voluptas consequuntur aliquid, necessitatibus error, fugit officia.
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+		
+</div><br><br><br>
+</body>
+<script>
+	$().ready(function(){
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+		$(".mypop").popover({
+			placement: "right",
+			title: "Títulooooo",
+			content: "Lorem ipsum dolor sit amet, consectetur <a href='#' class='btn'>adipisicing elit</a>. Deleniti error non perspiciatis.",
+			html: true
+		});
+		$("myModal2").modal({
+			backdrop: true, // se cierra al hacer click en la parte de afuera
+			keyboard: true, // se cierra al precionar ESC
+			show: true, // la muestra por default
+			// remote: "ajax.html" - ¿?.
+		})
+
+		setTimeout(function(){
+			$("#myModal2").modal("toggle"); // si está oculto lo muestra, si está visible lo oculta a los 2segs.
+		},2000);
+	});
+</script>
+</html>

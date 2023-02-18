@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link href="css/etiquetasHtml.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <article>
+		<h1>details</h1>
+        <details>
+            <summary>Etiqueta Summary (Firefox no la toma)</summary><br>
+            On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. Y
+        </details>
+
+    	<h1>time</h1>
+        <!--La etiqueta time se usa para marcar fechas y horas en un formato que entiendan los ordenadores. Dicha fecha puede ser el contenido de la etiqueta o puede ir en el atributo datetime con lo cual el contenido puede ser cualquier cosa.-->
+        <p>La <time datetime="2012-12-25" title="25 de diciembre de 2012"> navidad pasada</time> se juntaron 20 personas</br>
+        El evento comienza <time datetime="23:30" title="23:30 de la noche, no faltes"> poco antes de la media noche.</time></p>
+
+        <h1>Mark</h1>
+        <!--La etiqueta mark se usa para marcar partes del contenido de manera que pueda resaltarse y diferenciarse del resto.-->
+        <span>Esto es una prueba de mark particularmente <mark>esta palabra</mark>
+        </span>
+
+    	<h1>wbr</h1>
+        <!--La etiqueta wbr representa un lugar en el que se puede hacer salto de línea dentro de una palabra. Sirve para que el navegador pueda "partir" palabras muy largas si es necesario.-->
+        <div id="caja_wbr">
+        <p>
+        	Circunferencialmente
+            Correspon<wbr>dientemente  
+            Desacostumbradamente
+            Fotolitográficamente
+            Incomprehensi<wbr>bilidad
+            Inconstitucionalidad
+        </p>
+        </div>
+    	<h1>embed</h1>
+        se usa para integrar contenido externo (normalmente no HTML) al contenido
+        <embed width="300" height="100" src="simbolo_texto.swf" type="application/x-shockwave-flash">
+
+    	<h1>meter</h1>
+        se usa para marcar medidas, siempre que estas sean parte de una escala con valores mínimos y máximos<br>                
+        <meter min="0" low="500" high="2500" max="3500" optimum="3500" value="400" title="400 votos">500 votos de 3500</meter><br>
+         <meter min="0" low="500" high="2500" max="3500" optimum="3500" value="600" title="600 votos">600 votos de 3500</meter><br>
+        <meter min="0" low="500" high="2500" max="3500" optimum="3500" value="2700" title="2700 votos">2700 votos de 3500</meter>
+
+        <h1>Progress</h1>
+        <progress value="55" max="100"></progress><br>
+
+        <h1>Datalist</h1>
+        <form action="#" method="get"> Escriba su navegador favorito <br>
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <input type="submit">
+        </form>
+
+        <h1>Form oninput - &lt;Output&gt;</h1>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="range" id="a" value="50">100+
+            <input type="number" id="b" value="50">=
+            <output name="x" for="a b"></output>
+        </form>
+        <form oninput="z.value='El '+(c.value)+' comió mucho '+(d.value)">
+            <input type="text" id="c" value="hola">
+            <input type="text" id="d" value="chau">
+            <output name="z" for="c d">Escriba un animal y una comida</output>
+        </form>
+    	<h1>audio</h1>
+        <audio controls id="miaudio" loop autoplay>
+        <source src="audio/0802.mp3" type="audio/mpeg">
+        <source src="audio/0802.ogg" type="audio/ogg">
+        <source src="audio/0802.wav" type="audio/wav">
+        	<p>Tu navegador no soporta este archivo de audio. Puedes descargarlo de aquí<a href="audio/0802.mp3">aquí</a></p>
+        </audio>
+       <input type="button" value="PLAY" onClick="document.getElementById('miaudio').play();">
+       <input type="button" value="PAUSA" onClick="document.getElementById('miaudio').pause();">
+
+    	<h1>video</h1>
+        <video controls id="mivideo"  width="400" height="250" poster="video/poster.jpg">
+        <source src="video/globos.mp4" type="video/mp4">
+        <source src="video/globos.ogg" type="video/ogg">
+        <source src="video/globos.webm" type="video/webm">
+        	
+           <p>Tu navegador no soporta este archivo de audio. Puedes descargarlo de aquí<a href="audio/0802.mp3">aquí</a></p>
+        </video>
+       <input type="button" value="PLAY" onClick="document.getElementById('mivideo').play();">
+       <input type="button" value="PAUSA" onClick="document.getElementById('mivideo').pause();">
+    </article>
+</body>
+</html>

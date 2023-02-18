@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recopilación</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+		function limpiar() {
+			$("#divhtml-t").text('');
+			$("#divcss-t").text('');
+			$("#divjs-t").text('');
+			$("#divtodo").text('');
+			$("#divphp-t").text('');
+		}
+		$(document).ready(function() {
+			$("#boton0").click(function(event) {limpiar();});
+			$("#boton1").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/div_ocultar.txt');
+				$("#divjs-t").load('js/div_ocultar.js');
+				$("#divtodo").load('div_ocultar.html');
+			});
+			$("#boton2").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/tabla-iluminar.txt');
+				$("#divjs-t").load('js/tabla-iluminar.js');
+				$("#divtodo").load('tabla-iluminar.html');
+			});
+			$("#boton3").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/galeria.txt');
+				$("#divcss-t").load('css/galeria.css');
+				$("#divjs-t").load('js/galeria.js');
+				$("#divtodo").load('galeria.html');
+			});
+			$("#boton4").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/div_opciones.txt');
+				$("#divjs-t").load('js/div_opciones.js');
+				$("#divtodo").load('div_opciones.html');
+			});
+			$("#boton5").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/logueo.txt');
+				$("#divjs-t").load('js/logueo.js');
+				$("#divtodo").load('logueo.html');
+			});
+			$("#boton6").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/formulario-js.txt');
+				$("#divcss-t").load('css/formulario-js.css');
+				$("#divjs-t").load('js/formulario.js');
+				$("#divtodo").load('formulario-js.html');
+			});
+			$("#boton7").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/etiquetasHtml.txt');
+				$("#divcss-t").load('css/etiquetasHtml.css');
+				$("#divtodo").load('etiquetasHtml.html');
+			});
+			$("#boton8").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/efectosJS.txt');
+				$("#divjs-t").load('js/efectosJS.js');
+				$("#divtodo").load('efectosJS.html');
+			});
+			$("#boton9").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/JQmostrarContenidoDivs.txt');
+				$("#divjs-t").load('js/JQmostrarContenidoDivs.js');
+				$("#divtodo").load('JQmostrarContenidoDivs.html');
+			});
+			$("#boton10").click(function(event) {limpiar();
+				$("#divhtml-t").load('txt/VariablesArrays.txt');
+				$("#divphp-t").load('php/VariablesArrays.php');
+				$("#divtodo").load('http://localhost/CursoPHP/clase05.php');
+			});
+			
+		});
+		
+
+	</script>
+</head>
+<body>
+<header>
+	<button id="boton0" name="boton0">Reset</button>
+	<button id="boton1" name="boton1">Ocultar Div</button>
+	<button id="boton2" name="boton2">Ilumina fila</button>
+	<button id="boton3" name="boton3">Galeria mouseover</button>
+	<button id="boton4" name="boton4">mostrar(mensaje);</button>
+	<button id="boton5" name="boton5">limpiar();llenar();</button>
+	<button id="boton6" name="boton6">Formulario JS</button>
+	<button id="boton7" name="boton7">Etiquetas HTML</button>
+	<button id="boton8" name="boton8">Efectos JS</button>
+	<button id="boton9" name="boton9">Mostrar/copiar div</button>
+	<button id="boton10" name="boton10">Variables / Arrays (php)</button>
+</header>
+
+<section style="height:700px; height:50%; width:100%; background-color:#eef;">
+	<div style="position: relative; float:left; min-height: 300px; width:100%; background-color: red;">
+		<div id="divhtml"><textarea id="divhtml-t"></textarea></div>
+		<div id="divcss"><textarea id="divcss-t"></textarea></div>
+		<div id="divjs"><textarea id="divjs-t"></textarea></div>
+	</div>
+	<div style="position: relative; float:right; min-height: 300px; width:100%; background-color: blue;">
+		<div id="divtodo"></div>
+		<div id="divphp"><textarea id="divphp-t"></textarea></div>
+	</div>
+</section>
+
+</body>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</html>

@@ -1,0 +1,5 @@
+<input type="text" id="usuario" value="Usuario" style="color:#888;"
+	onfocus="limpiar(this);" onblur="llenar();"/>
+<input type="text" id="password" value="Password" style="color:#888;"
+	onfocus="limpiar(this);"/>
+<div id='notificacion'></div>

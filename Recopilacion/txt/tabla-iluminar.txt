@@ -1,0 +1,15 @@
+
+<table border="1" align="center" width="50%"> 
+	<tr onmouseover="iluminar(this);" onmouseout="apagar(this);">
+		<td>texto</td>
+		<td>texto</td>
+		<td>texto</td>
+		<td>texto</td>
+	</tr>
+	<tr onmouseover="iluminar(this);" onmouseout="apagar(this);">
+		<td>texto</td>
+		<td>texto</td>
+		<td>texto</td>
+		<td>texto</td>
+	</tr>
+</table>

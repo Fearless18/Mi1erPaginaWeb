@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<!-- #BeginTemplate "plantilla.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="Red Expert Consultora" />
+<meta name="keywords" content="Red Expert, Consultora, comunicación, éxito, eficiencia, soluciones, redes sociales, imagen corporativa" />
+<meta name="robots" content="index,FOLLOW" />
+<meta name="revisit-after" content="20 days" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="clientes-lightbox.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>  <!-- Validación JS de formularios -->
+<script type="text/javascript" src="js/messages_es.js"></script>  <!-- Mensajes de validación por defecto que serán mostrados si el programador no especifica uno -->  
+<script type="text/javascript" src="js/additional-methods.min.js"></script>  <!-- mas controles en formulario (e-mail "@") -->
+
+<!-- comienzo script lightbox de clientes -->
+<script> 
+$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+});
+</script>  
+<!-- final script lightbox de clientes -->
+
+<!-- Comienzo barra navegación -->
+<script>
+$(function() {
+     // grab the initial top offset of the navigation
+    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+        } else {
+            $('#sticky_navigation').css({ 'position': 'relative' });
+        }  
+    };
+
+  // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+});</script>
+<!-- barra navegación - FIN -->
+
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados -->
+<script type="text/javascript"> 
+$(document).ready( function() {
+    var loc = document.location.href.split(/[\?#]/).shift().replace(/\/$/, '');
+    $("a").each(function() {
+        if (this.href == loc) $(this).addClass("selected");
+    });
+});</script>
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados - FIN -->
+
+<!-- #BeginEditable "doctitle" -->
+<!-- * NO TOCAR -->
+
+<!-- Script Slider -->  
+<script>
+		jQuery(document).ready(function ($) {
+			//Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
+			//Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
+
+			var _SlideshowTransitions = [
+			//Fade in R
+			{$Duration: 1200, $During: { $Left: [0.3, 0.7] }, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $ScaleHorizontal: 0.3, $Opacity: 2 }
+			//Fade out L
+			, { $Duration: 1200, $SlideOut: true, $FlyDirection: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $ScaleHorizontal: 0.3, $Opacity: 2 }
+			];
+
+			var options = {
+				$AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+				$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+				$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+				$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
+
+				$ArrowKeyNavigation: false,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+				$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+				$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+				//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+				//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+				$SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+				$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+				$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+				$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+				$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+				$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+				$SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+					$Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+					$Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+					$TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+					$ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+				},
+
+				$BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+					$Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+					$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+					$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+					$SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+					$SpacingY: 10                                    //[Optional] Vertical space between each item in pixel, default value is 0
+				},
+
+				$ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+					$ChanceToShow: 1,                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+					$AutoCenter: 2                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				},
+
+				$ThumbnailNavigatorOptions: {
+					$Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+					$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+					$ActionMode: 0,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+					$DisableDrag: true                              //[Optional] Disable drag or not, default value is false
+				}
+			};
+
+			var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
+			//responsive code begin
+			//you can remove responsive code if you don't want the slider scales while window resizes
+			function ScaleSlider() {
+				var parentWidth = jssor_sliderb.$Elmt.parentNode.clientWidth;
+				if (parentWidth)
+					jssor_sliderb.$SetScaleWidth(Math.min(parentWidth, 850));
+				else
+					window.setTimeout(ScaleSlider, 30);
+			}
+
+			ScaleSlider();
+
+			if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+				$(window).bind('resize', ScaleSlider);
+			}
+		});
+</script>
+
+
+<title>* Red Expert * Consultora</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+.auto-style7 {
+	text-align: center;
+	background-color: #808080;
+}
+</style>
+<!-- #EndEditable -->
+
+<style type="text/css">
+
+.auto-style1 {
+	background-color: #FFFFFF;
+}
+
+.auto-style6 {
+	background-color: #CCCCCC;
+}
+
+</style>
+</head>
+
+<body style="margin-left: 0px; margin-top: 0px; background-color: #666666;" onLoad="Seleccionado('redes')">
+<!-- #BeginEditable "body" -->
+<!-- #EndEditable -->
+<table style="width: 100%" cellpadding="0" cellspacing="0" class="auto-style6">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table align="center" class="auto-style1" style="width: 100%">
+			<tr>
+				<td style="text-align: center;"><img alt="" height="79" src="imagenes/logo.png" width="202" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: center"><!-- this will be our navigation menu -->
+				<div id="demo_top_wrapper">    
+				    <div id="sticky_navigation_wrapper" align="center">
+    	    			<div id="sticky_navigation" align="center">
+        	    			<div class="demo_container" align="center">
+            				<ul>
+                    		<li><a href="index.html">Inicio</a></li>
+	                	    <li><a href="nosotros.html">Nosotros</a></li>
+    	        	        <li><a href="servicios.html">Servicios</a></li>
+            	        	<li><a href="clientes.html">Clientes</a></li>
+        	            	<li><a href="contactos.html">Contactos</a></li>
+                			</ul>
+        				    </div>
+    		    		</div>
+		    		</div>
+				</div>
+				</td>
+			</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td style="width: 1000px">
+			<table class="auto-style1" style="width: 100%" align="center">
+				<tr>
+					<td><!-- #BeginEditable "editable" -->
+		<table style="width: 60%; height: 180px" align="center">
+			<tr>
+				<td class="auto-style7">
+	<!-- Jssor Slider Begin -->
+	<!-- You can move inline styles to css file or css block. -->
+				<div id="sliderb_container" style="position: relative; width: 600px; height: 220px; overflow: hidden; border-style:none;">
+		<!-- Loading Screen -->
+					<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+						<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+						background-color: #000; top: 0px; left: 0px;width: 100%;height:100%; border-style:none;">
+						</div>
+						<div style="position: absolute; display: block; background: url(slider/loading.gif) no-repeat center center;
+						   top: 0px; left: 0px;width: 100%;height:100%; border-style:none;">
+						</div>
+					</div>
+		<!-- Slides Container / modifica el tamaño de las fotos -->
+					<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 230px;
+					overflow: hidden; border-style:none;"> 
+						<div>
+							<img u=image src="slider/slide1.png" />
+							<div u="thumb"></div>
+						</div>
+						<div>
+							<img u=image src="slider/slide2.png" />
+							<div u="thumb"></div>
+						</div>
+						<div>
+							<img u=image src="slider/slide3.png" />
+							<div u="thumb"></div>
+						</div>
+					</div>
+		<!-- ThumbnailNavigator Skin Begin / rectángulo gris donde estaba el texto y están los cuadrados indicadores de la foto actual -->
+					<div u="thumbnavigator" class="sliderb-T" style="position: absolute; bottom: 0px; right: 0px; height:45px; width:80px;">
+						<div style="filter: alpha(opacity=20); opacity:0.2; position: absolute; display: block;
+							background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
+						</div>
+		<!-- Thumbnail Item Skin Begin -->
+					<div u="slides">
+						<div u="prototype" style="POSITION: absolute; WIDTH: 600px; HEIGHT: 45px; TOP: 0; LEFT: 0;">
+						<thumbnailtemplate style="font-family: verdana; font-weight: normal; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0; LEFT: 0; color:#fff; line-height: 45px; font-size:20px; padding-left:10px;"></thumbnailtemplate>
+						</div>
+					</div> 
+		<!-- Thumbnail Item Skin End -->
+				</div>
+		<!-- ThumbnailNavigator Skin End -->
+		
+		<!-- Bullet Navigator Skin Begin -->
+		<!-- jssor slider bullet navigator skin 01 -->
+		<style>
+
+
+
+
+
+			/*
+			.jssorb01 div           (normal)
+			.jssorb01 div:hover     (normal mouseover)
+			.jssorb01 .av           (active)
+			.jssorb01 .av:hover     (active mouseover)
+			.jssorb01 .dn           (mousedown)
+			*/
+			.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av
+			{
+				filter: alpha(opacity=70);
+				opacity: .7;
+				overflow:hidden;
+				cursor: pointer;
+				border: #000 1px solid;
+			}
+			.jssorb01 div { background-color: gray; }
+			.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+			.jssorb01 .av { background-color: #fff; }
+			.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+		</style>
+		<!-- bullet navigator container -->
+		<div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+			<!-- bullet navigator item prototype -->
+			<div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+		</div>
+		<!-- Bullet Navigator Skin End -->
+		
+		<!-- Arrow Navigator Skin Begin -->
+		<style>
+
+
+
+
+
+			/* jssor slider arrow navigator skin 05 css */
+			/*
+			.jssora05l              (normal)
+			.jssora05r              (normal)
+			.jssora05l:hover        (normal mouseover)
+			.jssora05r:hover        (normal mouseover)
+			.jssora05ldn            (mousedown)
+			.jssora05rdn            (mousedown)
+			*/
+			.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+			{
+				position: absolute;
+				cursor: pointer;
+				display: block;
+				background: url(slider/a17.png) no-repeat;
+				overflow:hidden;
+			}
+			.jssora05l { background-position: -10px -40px; }
+			.jssora05r { background-position: -70px -40px; }
+			.jssora05l:hover { background-position: -130px -40px; }
+			.jssora05r:hover { background-position: -190px -40px; }
+			.jssora05ldn { background-position: -250px -40px; }
+			.jssora05rdn { background-position: -310px -40px; }
+		</style>
+		<!-- Arrow Left -->
+		<span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 123px; left: 8px;">
+		</span>
+		<!-- Arrow Right -->
+		<span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 123px; right: 8px">
+		</span>
+		<!-- Arrow Navigator Skin End -->
+		<a style="display: none" href="http://www.jssor.com">slideshow</a>
+		<!-- Trigger -->
+	</div>
+	<!-- Jssor Slider End -->
+	</td>
+			</tr>
+		</table>
+		<table style="width: 95%" align="center" cellspacing="15">
+			<tr>
+				<td colspan="2" class="destacado">"Comunicar mejor, un mundo 
+				de nuevas posibilidades".</td>
+			</tr>
+			<tr>
+				<td><span class="Noticiatitulo">&nbsp;Bienvenidos&nbsp;</span><br />
+				<span class="Noticia">Contar con una mayor fluidez en la comunicación, no sólo agiliza la actividad laboral sino que permite que su PYME u ONG logre mayores y mejores resultados economizando tiempo. <br/>
+				Red Expert, le da la solución en comunicación para su éxito.
+				</span> <br />
+				<br />
+				</td>
+				<td rowspan="2" style="width: 300px;"><iframe src="http://www.facebook.com/plugins/likebox.php?hre=https%3A%2F%2Fwww.facebook.com%2FWoWArgGX&amp;width=300&amp;height=360&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:372px;" allowTransparency="true"></iframe>
+				<!--href= -->
+				</td>
+			</tr>
+			<tr>
+				<td class="blogger"> <script src="http://feeds.feedburner.com/blogspot/tQgDs?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/blogspot/tQgDs"></a><br/>Powered by FeedBurner</p> </noscript>
+				</td> <!-- https://feedburner.google.com/fb/a/buzzboost?id=l81188m4onseel89hnpjq9ugqs -->
+			</tr>
+		</table>
+	<!-- #EndEditable -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<table style="width: 100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table style="width: 100%; height:100%" cellpadding="5" class="socalo">
+				<tr>
+					<td style="width: 33%" valign="top">Redes Sociales<br />
+						<img alt="" height="25" src="imagenes/logofacebook.png" width="25" style="border-width: 0px;"> 
+					<a href="http://www.redexpertarg.blogspot.com.ar/" target="_blank"> 
+					<img alt="" height="25" src="imagenes/logo_blogger.gif" width="25" style="border-width: 0px;"></a></td>
+					<td valign="top">Mapa sitio<br />
+						<span><a href="index.html">
+					Inicio</a> . <a href="nosotros.html">Nosotros</a> .
+					<a href="servicios.html">Servicios</a> . <a href="clientes.html">
+					Clientes</a> . <a href="contactos.html">Contactos</a></span></td>
+					<td style="width: 33%" valign="top"><span>Contacto</span><br />
+						<span class="info">Celular: 15-2-451-1251.<br />
+					E-mail: <a href="mailto:redexpertcomunicacion@gmail.com">redexpertcomunicacion@gmail.com</a></span></td>
+				</tr>
+				<tr>
+					<td class="footer">&nbsp;</td>
+					<td class="footer">(C) 2014 - Red Expert</td>
+					<td class="footer" style="text-align:right;">Diseño
+					<a href="mailto:badfan18@yahoo.com.ar">Alejandro Biondi</a></td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</body>

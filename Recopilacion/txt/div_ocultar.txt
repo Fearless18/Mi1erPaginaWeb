@@ -1,0 +1,7 @@
+	
+<body>
+	<a href="#" onclick="alternar();">Ocultar Div</a>
+	<div id="caja" style="background:#ff0;color:f00;">
+		texto fantasma
+	</div>
+</body>

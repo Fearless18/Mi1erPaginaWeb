@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<!-- #BeginTemplate "plantilla.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="Red Expert Consultora" />
+<meta name="keywords" content="Red Expert, Consultora, comunicación, éxito, eficiencia, soluciones, redes sociales, imagen corporativa" />
+<meta name="robots" content="index,FOLLOW" />
+<meta name="revisit-after" content="20 days" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="clientes-lightbox.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>  <!-- Validación JS de formularios -->
+<script type="text/javascript" src="js/messages_es.js"></script>  <!-- Mensajes de validación por defecto que serán mostrados si el programador no especifica uno -->  
+<script type="text/javascript" src="js/additional-methods.min.js"></script>  <!-- mas controles en formulario (e-mail "@") -->
+
+<!-- comienzo script lightbox de clientes -->
+<script> 
+$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+});
+</script>  
+<!-- final script lightbox de clientes -->
+
+<!-- Comienzo barra navegación -->
+<script>
+$(function() {
+     // grab the initial top offset of the navigation
+    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+        } else {
+            $('#sticky_navigation').css({ 'position': 'relative' });
+        }  
+    };
+
+  // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+});</script>
+<!-- barra navegación - FIN -->
+
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados -->
+<script type="text/javascript"> 
+$(document).ready( function() {
+    var loc = document.location.href.split(/[\?#]/).shift().replace(/\/$/, '');
+    $("a").each(function() {
+        if (this.href == loc) $(this).addClass("selected");
+    });
+});</script>
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados - FIN -->
+
+<!-- #BeginEditable "doctitle" -->
+<title>* Red Expert * Consultora</title>
+
+<!-- Lista desplegable -->	
+		<!-- http://librosweb.es/javascript/capitulo_7/utilidades_basicas_para_formularios.html -->
+<script type="text/javascript"> 
+    $(document).ready(function(){
+        $("dd").hide()
+        $("dt").css({'cursor':'pointer'})
+        $("dd#ddfacebook").slideToggle('slow');
+    $("dt").click(function(event){
+        var desplegable = $(this).next();
+        $('dd').not(desplegable).slideUp('fast');
+        desplegable.slideToggle('fast');
+        event.preventDefault();
+        });
+    /* para que marque el tilde verde depende en el <dt> que clickeemos */
+    $("dt#facebook").click(function(event){
+		document.getElementById("tildefacebook").style.visibility="visible";
+		document.getElementById("tildeyoutube").style.visibility="hidden";
+		document.getElementById("tildetwitter").style.visibility="hidden";
+		document.getElementById("tildeblog").style.visibility="hidden";          
+		document.getElementById("tildelinked").style.visibility="hidden"; })
+    $("dt#youtube").click(function(event){
+		document.getElementById("tildefacebook").style.visibility="hidden";
+		document.getElementById("tildeyoutube").style.visibility="visible";
+		document.getElementById("tildetwitter").style.visibility="hidden";
+		document.getElementById("tildeblog").style.visibility="hidden";          
+		document.getElementById("tildelinked").style.visibility="hidden"; })
+    $("dt#twitter").click(function(event){
+		document.getElementById("tildefacebook").style.visibility="hidden";
+		document.getElementById("tildeyoutube").style.visibility="hidden";
+		document.getElementById("tildetwitter").style.visibility="visible";
+		document.getElementById("tildeblog").style.visibility="hidden";          
+		document.getElementById("tildelinked").style.visibility="hidden"; })
+    $("dt#blog").click(function(event){
+		document.getElementById("tildefacebook").style.visibility="hidden";
+		document.getElementById("tildeyoutube").style.visibility="hidden";
+		document.getElementById("tildetwitter").style.visibility="hidden";
+		document.getElementById("tildeblog").style.visibility="visible";          
+		document.getElementById("tildelinked").style.visibility="hidden"; })
+    $("dt#linked").click(function(event){
+		document.getElementById("tildefacebook").style.visibility="hidden";
+		document.getElementById("tildeyoutube").style.visibility="hidden";
+		document.getElementById("tildetwitter").style.visibility="hidden";
+		document.getElementById("tildeblog").style.visibility="hidden";          
+		document.getElementById("tildelinked").style.visibility="visible"; })
+      });
+</script>
+<!-- Para que marque que estamos en 'redes sociales'
+  Creo que está de mas, si funca todo bien, borrar. Iba arriba
+    $(document).ready(function()
+    	{document.getElementById('redes').className="selected";})  -->
+
+
+<!-- Lista desplegable - FIN -->
+
+<!-- Para que alterne entre los divs a mostrar -->
+<script type="text/javascript">
+function swap(one, two, three, four) {
+    document.getElementById(one).style.display = 'block';
+    document.getElementById(two).style.display = 'none';
+    document.getElementById(three).style.display = 'none';
+	document.getElementById(four).style.display = 'none';}
+</script>
+<!-- Para que alterne entre los divs a mostrar - FIN -->
+
+<!-- Para que marque como "selected" el link que apreté en el submenú -->
+<script>
+var Lst; 
+function Seleccionado(obj){
+ document.getElementById('redes').className="";
+ if (typeof(obj)=='string') obj=document.getElementById(obj);
+ if (Lst) Lst.className='';
+ obj.className='selected';
+ Lst=obj;}
+</script>
+<!-- Para que marque como "selected" el link que apreté en el submenú - FIN -->
+
+
+<style type="text/css">
+
+
+.auto-style3 {
+	text-align: center;
+}
+</style>
+<!-- #EndEditable -->
+
+<style type="text/css">
+
+.auto-style1 {
+	background-color: #FFFFFF;
+}
+
+.auto-style6 {
+	background-color: #CCCCCC;
+}
+
+</style>
+</head>
+
+<body style="margin-left: 0px; margin-top: 0px; background-color: #666666;" onLoad="Seleccionado('redes')">
+<!-- #BeginEditable "body" -->
+<div>
+</div>
+<!-- #EndEditable -->
+<table style="width: 100%" cellpadding="0" cellspacing="0" class="auto-style6">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table align="center" class="auto-style1" style="width: 100%">
+			<tr>
+				<td style="text-align: center;"><img alt="" height="79" src="imagenes/logo.png" width="202" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: center"><!-- this will be our navigation menu -->
+				<div id="demo_top_wrapper">    
+				    <div id="sticky_navigation_wrapper" align="center">
+    	    			<div id="sticky_navigation" align="center">
+        	    			<div class="demo_container" align="center">
+            				<ul>
+                    		<li><a href="index.html">Inicio</a></li>
+	                	    <li><a href="nosotros.html">Nosotros</a></li>
+    	        	        <li><a href="servicios.html">Servicios</a></li>
+            	        	<li><a href="clientes.html">Clientes</a></li>
+        	            	<li><a href="contactos.html">Contactos</a></li>
+                			</ul>
+        				    </div>
+    		    		</div>
+		    		</div>
+				</div>
+				</td>
+			</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td style="width: 1000px">
+			<table class="auto-style1" style="width: 100%" align="center">
+				<tr>
+					<td><!-- #BeginEditable "editable" -->
+
+		<table style="width: 95%" align="center">
+			<tr>
+				<td><br /><span class="Noticia">&nbsp;&nbsp;Les ofrecemos los siguientes servicios:</span></td>
+			</tr>
+			<tr>
+				<td id="submenu" class="auto-style3" style="height: 25%"><ul>
+				<li><h4><a id="redes" href="#" onClick="swap('redessociales','basededatos','imagencorporativa','correocorporativo'); Seleccionado(this)">Redes Sociales</a></h4></li>
+				<li><h4><a href="#" onClick="swap('imagencorporativa','redessociales','basededatos','correocorporativo'); Seleccionado(this)">Imagen Corporativa</a></h4></li>
+				<li><h4><a href="#" onClick="swap('basededatos','redessociales','imagencorporativa','correocorporativo'); Seleccionado(this)">Base de Datos</a></h4></li>
+				<li><h4><a href="#" onClick="swap('correocorporativo','redessociales','imagencorporativa','basededatos'); Seleccionado(this)">Elaboración correo corporativos</a></h4></li></ul></td>
+			</tr>
+		</table>
+		<div id="contenedor de divs" style="height:500px;">
+			<div id="basededatos" style="background-color: #eeeeee; width:90%; padding: 10px; position:relative; left: 40px;" class="div-hide">
+				<table style="width: 100%" cellpadding="5"><p>La disponibilidad de una base de datos creciente y actualizada se constituye en una herramienta esencial para comunicar tanto las actividades de su empresa como sus novedades comerciales. En ese sentido, la correcta administración de la información en términos de estructuración y utilización, se torna indispensable.</p>
+				</table>
+			</div>
+			<div id="correocorporativo" style="background-color: #eeeeee; width:90%; padding: 10px; position:relative; left: 40px;" class="div-hide">
+				<table style="width: 100%" cellpadding="5"><p>La escritura de correos electrónicos requiere de un lenguaje 
+					claro, atinado y preciso que permita optimizar la comunicación tanto a nivel interno como externo. Para ello, le ofrecemos:<br />
+					<br />
+					Redacción y edición.<br />
+					Revisión ortográfica, sintáctica y semántica de sus textos.</p>
+				</table>
+			</div>
+			<div id="imagencorporativa" style="background-color: #eeeeee; width:90%; padding: 10px; position:relative; left: 40px;" class="div-hide">
+				<table style="width: 100%" cellpadding="5"><p>Cada acción de comunicación que se realiza genera un efecto sobre “la imagen” 
+					de la propia empresa presente en la mente de sus clientes. Es por eso que se 
+					vuelve indispensable desplegar tácticas que permitan sostener y acrecentar la 
+					credibilidad, prestigio y poder de su marca en el mediano/largo plazo. En ese 
+					sentido, ofrecemos:</p>
+					<p>Relevamiento de la estructura y la información contenida en su sitio web para 
+					realizar un diagnóstico y llevar adelante un proceso de optimización. <br />
+					<span class="info">Ejemplo 1: Búsqueda de mayor claridad en la redacción. <br />
+					Ejemplo 2: Definición de colores alineados con la imagen de marca que se quiere 
+					proyectar.</span><br /><br />
+					Creación de textos, imágenes y audios para comunicar a sus clientes en ocasiones 
+					oportunas tales como celebraciones, fechas conmemorativas, cumpleaños, 
+					aniversarios, etc. <br />
+					<span class="info">Ejemplo: Fiestas de fin de año.</span><br /> <br />
+					Invención de eslóganes acordes con la filosofía de la empresa y de alta 
+					efectividad.<br />
+					Realización de campañas para favorecer la responsabilidad social empresaria.</p>
+				</table>
+			</div>
+
+			<div id="redessociales" style="background-color: #eeeeee; width:90%; padding: 10px; position:relative; left: 40px; z-index:1;" class="div-hidden">
+				<table style="width: 100%" cellpadding="5">
+					<tr>
+						<td colspan="2">La comunicación realizada a través de las diversas 
+							plataformas virtuales se ha vuelto tan importante que pensar a las 
+							empresas por fuera de ella, se torna casi un imposible. En ese sentido, 
+							las redes sociales utilizadas estratégicamente brindan la posibilidad de 
+							conocer cada día mejor las necesidades de quienes solicitan sus 
+							servicios y/o productos así como también de mantener un vínculo duradero 
+							y sólido con ellos. Lo anterior no implica desechar las vías 
+							tradicionales para exhibir el quehacer de su organización sino incluir 
+							las nuevas para facilitar un avance integral orientado hacia el logro de 
+							sus objetivos.<br />En materia de redes sociales, Red Expert trabaja con: <br />
+						</td>
+					</tr>
+					<tr>
+						<td  style="width: 50px">&nbsp;</td>
+						<td valign="middle">
+							<dl>
+								<dt id="facebook"> <!--facebookdt-->
+									<img alt="" height="15" src="imagenes/tilde.gif" width="15" id="tildefacebook"/> <span class="NormalBold">Facebook</span></dt>
+								<dd id="ddfacebook"><span class="info">Búsqueda y selección de contenidos estratégicos para acrecentar el volumen y la dinámica de la comunidad destinataria de sus mensajes.<br />
+								Creación de placas en base a imágenes y textos propios que le permitan adquirir mayor visibilidad. <br />
+								Creación, redacción, edición y renovación de textos publicitarios e imágenes acordes a su negocio.<br />
+								Respuesta a los fans para asegurar un feedback que habilite un vínculo sostenible y sólido en el tiempo.<br />
+								Selección y posteo de contenidos audiovisuales de gran calidad e interés para los usuarios.<br />
+								Entrega de reporte mensual en base a métricas (Facebook Insights) para conocer con precisión tanto la evolución de la fan page como las características específicas de su audiencia.<br />
+								Campañas publicitarias (con la herramienta Facebook Ads) para atraer un gran caudal de nuevos usuarios que conozcan e interactúen con la marca (a nivel virtual y comercial).</span></dd>
+								<dt id="youtube">
+									<img alt="" height="15" src="imagenes/tilde.gif" width="15" id="tildeyoutube" style="visibility:hidden"/> <span class="NormalBold">Youtube</span></dt>
+								<dd><span class="info">Edición y subida de videos al canal de la empresa.<br />
+								Actualización de la información comercial y de las novedades institucionales en los videos incluidos en el canal de la organización.<br />
+								Seguimiento de la evolución del canal en base al relevamiento de estadísticas incluidas en Youtube Analitics con el fin de incrementar la visibilidad de la marca<br />
+								Respuesta a comentarios de usuarios en los videos.<br/>
+								Suscripción a canales.</span></dd>
+								<dt id="twitter">
+									<img alt="" height="15" src="imagenes/tilde.gif" width="15" id="tildetwitter" style="visibility:hidden"/> <span class="NormalBold">Twitter</span></dt>
+								<dd><span class="info">Respuesta a mensajes directos (dm).<br />
+										Tweets diarios.<br />
+										Retwitteo de contenidos relacionados a cuentas seguidoras.<br />
+										Seguir a nuevas cuentas.<br />
+										Participación en hashtags estratégicos.</span></dd>
+								<dt id="blog">
+									<img alt="" height="15" src="imagenes/tilde.gif" width="15" id="tildeblog" style="visibility:hidden"/> <span class="NormalBold">Blog</span></dt>
+								<dd> <span class="info">Redacción y edición de contenidos.<br />
+										Actualización de la plataforma.</span></dd>
+								<dt id="linked">
+									<img alt="" height="15" src="imagenes/tilde.gif" width="15" id="tildelinked" style="visibility:hidden"/> <span class="NormalBold">Linkedin</span></dt>
+								<dd><span class="info">Armado y organización de la cuenta.<br />
+										Actualización.<br />
+										Interacciones estratégicas.<br />
+										Búsqueda de contactos útiles.</span>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+
+	<!-- #EndEditable -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<table style="width: 100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table style="width: 100%; height:100%" cellpadding="5" class="socalo">
+				<tr>
+					<td style="width: 33%" valign="top">Redes Sociales<br />
+						<img alt="" height="25" src="imagenes/logofacebook.png" width="25" style="border-width: 0px;"> 
+					<a href="http://www.redexpertarg.blogspot.com.ar/" target="_blank"> 
+					<img alt="" height="25" src="imagenes/logo_blogger.gif" width="25" style="border-width: 0px;"></a></td>
+					<td valign="top">Mapa sitio<br />
+						<span><a href="index.html">
+					Inicio</a> . <a href="nosotros.html">Nosotros</a> .
+					<a href="servicios.html">Servicios</a> . <a href="clientes.html">
+					Clientes</a> . <a href="contactos.html">Contactos</a></span></td>
+					<td style="width: 33%" valign="top"><span>Contacto</span><br />
+						<span class="info">Celular: 15-2-451-1251.<br />
+					E-mail: <a href="mailto:redexpertcomunicacion@gmail.com">redexpertcomunicacion@gmail.com</a></span></td>
+				</tr>
+				<tr>
+					<td class="footer">&nbsp;</td>
+					<td class="footer">(C) 2014 - Red Expert</td>
+					<td class="footer" style="text-align:right;">Diseño
+					<a href="mailto:badfan18@yahoo.com.ar">Alejandro Biondi</a></td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</body>

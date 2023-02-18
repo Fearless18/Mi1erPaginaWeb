@@ -1,0 +1,340 @@
+/** {	margin:0px;	padding:0px;}*/
+body {font-family: verdana; font-size: 13px;}
+a {text-decoration: none;}
+
+html {
+	background: url(img/pattern.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+	background: url(img/liveconcertnew.png) no-repeat; 
+	background-position: 50% 70%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+	height: 170px;
+	width: 95%;
+	margin: 0px auto;
+}
+sup {
+	color: #f00;
+}
+nav {
+	background-color: #000;
+	color: white;
+	height: 50px;
+	width: 95%;
+	margin: 0px auto;
+}
+nav ul {
+	text-align: center;
+	margin: 0px auto;
+
+}
+nav ul li {
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	
+}
+nav ul li a {
+	line-height: 20px;
+	display: block;
+	padding: 5px 10px;
+	color: #fff;
+	border: 3px;
+	box-shadow: inset 0px 0px 18px #a22;
+	border-radius: 5px;
+		margin: 10px;
+}
+ul li a {
+	line-height: 20px;
+	display: block;
+	padding: 5px 10px;
+	color: #fff;
+	border: 3px;
+
+}
+
+ul li a:hover{
+	background-color: #822;
+}
+
+h1 {color: orange;
+	font-size: 16px;
+	background: linear-gradient(to right, black 30%, #33a 80%); /* Standard syntax */
+	padding:6px;
+	margin-top: 0px;
+	margin-bottom: 10px;}
+
+h2 {color: #a22;
+	font-size: 15px;
+	background: linear-gradient(to right, #ddd 30%, #33a 80%); /* Standard syntax */
+	padding:4px;
+	margin-top: 0px;
+	margin-bottom: 10px;}
+
+
+#menu {
+	background-color: #000;
+	color: white;
+	height: 50px;
+	width: 95%;
+	margin: 0px auto;
+}
+#menu ul {
+	text-align: center;
+	margin: 0px auto;
+}
+#menu li {
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+}
+#menu ul li ul li {
+	left:60px;
+}
+
+main {
+	/*background-color: #222;*/
+	height: 500px;
+	width: 95%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    background-color: rgba(255,255,255,0.7);
+    width: 150px;
+    list-style: none;
+    margin-left: -30px;
+}
+#seccionprincipal {
+	background-color: transparent;
+	height: 500px;
+	width: 80%;
+	position: relative;
+	float: left;
+	}
+
+#seccionregistrarse{
+	background-color: rgba(20,70,70,0.4);
+	color: white;
+	height: 500px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.textoderecha{
+	text-align: right;
+}
+article {
+}
+#art1 {
+	background-color: #6699b0;
+	min-height: 30%;
+	max-height: 50%;
+	width: 80%;
+	position: relative;
+	/*
+	left:5%; right: 5%;*/
+	margin: 10px auto;
+	padding: 15px; 
+
+}
+
+#art2 {
+	background-color: #7689c0;
+	height: 30%;
+	width: 25%;
+	left: 20%;/* right: 25%;*/
+	position: relative;
+	display: inline-block;
+	margin: 10px auto;
+	padding: 15px;
+}
+
+#costado {
+	background-color: rgba(30,30,30,0.4);
+	height: 480px;
+	width: 18.5%;
+	float: left;
+	padding: 10px;
+	position: relative;
+	box-shadow: inset 0px 0px 8px black;
+}
+
+#divRegistro{
+	text-align: right;
+	color: #ddf;
+}
+
+/* SECCION NOTICIAS */ 
+
+#noticias{
+	background-color: rgba(40,10,70,0.4);
+	color: white;
+	height: 500px;
+	width: 80%;
+	float: left;
+	position: relative;
+}
+#artnoti1 {
+	background-color: #227;
+	
+	width: 80%;
+	position: relative;
+	/*
+	left:5%; right: 5%;*/
+	margin: 10px auto;
+	padding: 15px; 
+
+}
+.titulonoticia {
+	font-size: 16px;
+	color: #a33;
+	text-shadow: none;
+	text-align: none;
+}
+.titulonoticia:hover {
+	color: #eee;
+}
+.tituloseccion {
+	text-align: center;
+	font-size: 20px;
+	text-shadow: 4px 4px 2px black;
+}
+.textonormal {
+	text-shadow: none;
+	font-size: 14px;
+	text-align: left;
+}
+
+/* SECCION BANDAS */ 
+#detallesbanda {
+	background-color: #a8d;
+	width: 80%;
+	position: relative;
+	text-align: left;
+	margin: 10px auto;
+	padding: 15px;
+	border: 1px dotted black; 
+}
+
+#detallesbanda ul {
+	text-align: center;
+	margin: 0px auto;
+}
+#detallesbanda ul li {
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+	border-style: solid;
+	border-bottom-style: none;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#detallesbanda ul li a {
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+#detallesbanda ul li a:hover {
+	background-color: #85a;
+}
+
+#tabs-1, #tabs-2, #tabs-3 {
+	border-top-style: solid;
+	padding: 10px;
+}
+#logobanda {
+	background-color: rgba(30,30,30,0.2);
+	height: 80px;
+	width: 250px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 15px;
+}
+
+.logobanda {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.nombrebanda {
+	color: #a23;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding:2px;
+	margin-bottom: 5px;
+}
+#imagenesbanda{
+	position: relative;
+	display: inline;
+}
+.imagenesbanda {
+	width: 100px;
+}
+
+.imagenesbanda:hover{
+	z-index:1;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+	-moz-transform: scale(5, 5);
+	-ms-transform: scale(5, 5);
+	-o-transform: scale(5, 5);
+	-webkit-transform: scale(5, 5);
+	transform: scale(5, 5);
+	-moz-transition:all 1s; 
+	-ms-transition:all 1s;
+	-o-transition:all 1s ;
+	-webkit-transition:all 1s; 
+	transition: all 1s; 
+}
+
+.buscar {
+	font-size: 14px;
+	background-color: #777;
+	padding: 10px;
+	color:red;
+	position:relative;
+	top:-30px;
+	right:-85%;
+	padding: 5px 15px;
+	text-align: center;
+	/* box-shadow: inset 0px 0px 8px black;*/ 
+}
+a #divbuscar :visited {
+	color:red;
+}
+
+.overflow {
+  height: 100px;
+}
+footer{
+	background-color: #555;
+	height: 20px;
+	width: 95%;
+	margin: 0px auto;
+}

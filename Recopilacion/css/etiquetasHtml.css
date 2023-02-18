@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+time{
+	font-style:italic;
+	font-weight:bold;
+	border-bottom:1px dashed #eee;
+	cursor: default;
+}
+mark{
+	/*background-color:pink;*/
+}
+
+#caja_wbr{
+	width:180px;
+	padding:10px;
+	border: 1px dotted #777;
+	resize:both;
+	overflow:auto;
+}
+meter, progress{
+	width:350px;
+	height:35px;
+}
+video{
+	opacity:0.9;
+}

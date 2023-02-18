@@ -1,0 +1,123 @@
+﻿a:link {color: #3c643c; text-decoration: none;}
+a:visited {color: #0a460a;} 
+a:hover {color: #002f00;}
+a.selected {color: #c83232;}
+
+/* estilos del menu principal*/
+.demo_container { width:100%; margin:0 auto;}
+#demo_top_wrapper { margin:0 0 20px 0; }
+#demo_top { height:100px; padding:20px 0 0 0; }
+
+#sticky_navigation_wrapper { width:100%; height:40px;}
+#sticky_navigation {width :100%; height:40px; background:url(imagenes/trans-black-602.png); -moz-box-shadow: 0 0 5px #bbb; -webkit-box-shadow: 0 0 5px #bbb; box-shadow: 0 0 5px #bbb; z-index:3;}
+#sticky_navigation ul { list-style:none; margin:0; padding:5px; float:left; left:50%; position:relative;}
+#sticky_navigation ul li { margin:0; padding:0; display:inline; float:left; right:50%; position:relative;}
+#sticky_navigation ul li a { display:block; float:left; margin:0 0 0 5px; padding:0 20px; height:30px; line-height:32px; font-size:17px; font-family:'Nothing You Could Do', cursive; font-weight:bold; color:#eee; background:#555; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; }
+#sticky_navigation ul li a:hover { color:#4b3; background:#555; }
+#sticky_navigation ul li a.selected { color:#fff; background:#392; }
+/* FIN estilos del menu principal*/	
+
+/* estilos submenú - (servicios) */
+#submenu {width :100%; }
+#submenu ul {list-style:none; margin: 0px 50px 30px 50px; padding:5px;}
+#submenu ul li {margin: 0; padding: 0;}
+#submenu ul li a {float:left; margin: 0px 0px 10px 5px; padding:0 20px; height:27px; line-height:25px; font-size:14px; font-family:'Verdana'; font-weight:bold; color:#392; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+#submenu ul li a:hover { color:#392; background:#ddd; }
+#submenu ul li a.selected { color:#fff; background:#392; }
+/* FIN estilos del menu principal*/	
+
+.div-hide {display: none; }
+.div-hidden {display: hidden; }
+.div-show {display: block; }
+
+TD, TH  {
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: light;
+	color: rgb(0,0,0); }
+
+body {
+	font-size:10pt;
+	font-family: Verdana, Arial, Helvetica;
+	line-height: 18px;
+	background-color: rgb(204,204,204);
+	color: rgb(30,30,30);
+	margin-left: 10.0px; margin-right: 0.0px; margin-top: 10.0px; }
+
+.NormalBold {font-weight: bold; }
+
+.info {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+	color: #003c00; }
+
+.Noticiatitulo {
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #aa7832;
+	box-shadow: 0px 0px 5px #649632;
+	line-height: 30px;
+	border-radius:3px;}
+
+.Noticia {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12pt;
+	color: #649632; line-height: 23px; }
+	
+.socalo {background-color: #66AA66;}
+.footer {text-align: center;font-size: 7pt;}
+
+.destacado {
+	text-align: center;
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 16pt; font-weight: bold;
+	color: #323296; line-height: 23px;
+	text-shadow: 2px 2px #bbb;
+	}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(153,153,51); }
+h2 {
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(204,153,0); }
+h3 {
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(0,102,153); }
+h4 {
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(153,153,0); }
+h5 {
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(255,153,0); }
+h6 {
+	font-family: Times New Roman, Times;
+	color: rgb(51,102,204); }
+
+input[type=text], textarea {
+  @include transition(all 0.30s ease-in-out);
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px #66cc66;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #77bb77;
+}
+
+.errores {display:block;color:#f00; width:100%; height:50px;}
+.errores ul li {color:#f00;}
+
+.blogger {
+	background-color: #66AA66;
+	text-align: left;
+	padding:5px 15px 5px 15px; 
+	font-size: 9pt;}
+.blogger a:link {color:#dfd; font-size: 11pt;text-decoration: none;}
+.blogger a:visited {color:#1a561a;} 
+.blogger a:hover {color: #ada;}

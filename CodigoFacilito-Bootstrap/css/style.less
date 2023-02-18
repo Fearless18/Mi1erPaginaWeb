@@ -1,0 +1,26 @@
+@import "funciones.less";
+
+a {
+  color:@link-color;
+  &:hover {
+		color: darken(@link-color, 10%);
+  }
+}
+
+body {
+	color: @color;
+	font-family: @font;
+	background-color: @background;
+	
+	& > section {
+		padding: 5em 0;
+	}
+}
+
+div.round{
+ .redondear(10px);
+}
+
+div.mini-round{
+	.redondear;
+}

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="Red Expert Consultora" />
+<meta name="keywords" content="Red Expert, Consultora, comunicación, éxito, eficiencia, soluciones, redes sociales, imagen corporativa" />
+<meta name="robots" content="index,FOLLOW" />
+<meta name="revisit-after" content="20 days" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="clientes-lightbox.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>  <!-- Validación JS de formularios -->
+<script type="text/javascript" src="js/messages_es.js"></script>  <!-- Mensajes de validación por defecto que serán mostrados si el programador no especifica uno -->  
+<script type="text/javascript" src="js/additional-methods.min.js"></script>  <!-- mas controles en formulario (e-mail "@") -->
+
+<!-- comienzo script lightbox de clientes -->
+<script> 
+$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+});
+</script>  
+<!-- final script lightbox de clientes -->
+
+<!-- Comienzo barra navegación -->
+<script>
+$(function() {
+     // grab the initial top offset of the navigation
+    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+        } else {
+            $('#sticky_navigation').css({ 'position': 'relative' });
+        }  
+    };
+
+  // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+});</script>
+<!-- barra navegación - FIN -->
+
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados -->
+<script type="text/javascript"> 
+$(document).ready( function() {
+    var loc = document.location.href.split(/[\?#]/).shift().replace(/\/$/, '');
+    $("a").each(function() {
+        if (this.href == loc) $(this).addClass("selected");
+    });
+});</script>
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados - FIN -->
+
+<!-- #BeginEditable "doctitle" -->
+<title>* Red Expert * Consultora</title>
+<!-- #EndEditable -->
+
+<style type="text/css">
+.auto-style1 {
+	background-color: #FFFFFF;
+}
+
+.auto-style6 {
+	background-color: #CCCCCC;
+}
+
+</style>
+</head>
+
+<body style="margin-left: 0px; margin-top: 0px; background-color: #666666;" onLoad="Seleccionado('redes')">
+<!-- #BeginEditable "body" -->
+<!-- #EndEditable -->
+<table style="width: 100%" cellpadding="0" cellspacing="0" class="auto-style6">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table align="center" class="auto-style1" style="width: 100%">
+			<tr>
+				<td style="text-align: center;"><img alt="" height="79" src="imagenes/logo.png" width="202" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: center"><!-- this will be our navigation menu -->
+				<div id="demo_top_wrapper">    
+				    <div id="sticky_navigation_wrapper" align="center">
+    	    			<div id="sticky_navigation" align="center">
+        	    			<div class="demo_container" align="center">
+            				<ul>
+                    		<li><a href="default.html">Inicio</a></li>
+	                	    <li><a href="nosotros.html">Nosotros</a></li>
+    	        	        <li><a href="servicios.html">Servicios</a></li>
+            	        	<li><a href="clientes.html">Clientes</a></li>
+        	            	<li><a href="contactos.html">Contactos</a></li>
+                			</ul>
+        				    </div>
+    		    		</div>
+		    		</div>
+				</div>
+				</td>
+			</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td style="width: 1000px">
+			<table class="auto-style1" style="width: 100%" align="center">
+				<tr>
+					<td><!-- #BeginEditable "editable" -->
+					<p>(editable)</p>
+	<!-- #EndEditable -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<table style="width: 100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table style="width: 100%; height:100%" cellpadding="5" class="socalo">
+				<tr>
+					<td style="width: 33%" valign="top">Redes Sociales<br />
+						<img alt="" height="25" src="imagenes/logofacebook.png" width="25" style="border-width: 0px;"> 
+					<a href="http://www.redexpertarg.blogspot.com.ar/" target="_blank"> 
+					<img alt="" height="25" src="imagenes/logo_blogger.gif" width="25" style="border-width: 0px;"></a></td>
+					<td valign="top">Mapa sitio<br />
+						<span><a href="default.html">
+					Inicio</a> . <a href="nosotros.html">Nosotros</a> .
+					<a href="servicios.html">Servicios</a> . <a href="clientes.html">
+					Clientes</a> . <a href="contactos.html">Contactos</a></span></td>
+					<td style="width: 33%" valign="top"><span>Contacto</span><br />
+						<span class="info">Celular: 15-2-451-1251.<br />
+					E-mail: <a href="mailto:redexpertcomunicacion@gmail.com">redexpertcomunicacion@gmail.com</a></span></td>
+				</tr>
+				<tr>
+					<td class="footer">&nbsp;</td>
+					<td class="footer">(C) 2014 - Red Expert</td>
+					<td class="footer" style="text-align:right;">Diseño
+					<a href="mailto:badfan18@yahoo.com.ar">Alejandro Biondi</a></td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</body>

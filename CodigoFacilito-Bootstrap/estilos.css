@@ -1,0 +1,21 @@
+/* Escritorio */ 
+@media (min-width: 1200px) {
+	/*body {color: black;*/}
+}
+/* Escritorio chico */ 
+@media (min-width: 768px) and (max-width: 1200px) {
+	body {color: blue;}
+}
+/* Tablet - Smartphone */ 
+@media (max-width: 767px) {
+	body {color: green;}
+}
+
+/* Celular */ 
+@media (max-width: 480px) {
+	body {color: orange;}
+}
+
+.texto-grande {
+	font-size: 40px;
+}

@@ -1,0 +1,14 @@
+<div id="contenedor">
+ <div id="menu">
+  <ul>
+   <li><a href="#" onmouseover="mostrar('imagen1');">Imagen 1</a> <br/></li>
+   <li><a href="#" onmouseover="mostrar('imagen2');">Imagen 2</a> <br/></li>
+   <li><a href="#" onmouseover="mostrar('imagen3');">Imagen 3</a> <br/></li>
+  </ul><br/><br/>
+ </div>
+ <div id="contenedorimagenes">
+  <div id="imagen1"><img src="auto1.jpg" width="70%"></div>
+  <div id="imagen2" style="display:none;"><img src="auto2.jpg" width="70%"></div>
+  <div id="imagen3" style="display:none;"><img src="auto3.jpg" width="70%"></div>
+ </div>
+</div>

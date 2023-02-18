@@ -1,0 +1,53 @@
+ul {
+	list-style: none;
+	margin: 10px auto;
+	padding:0;
+}
+
+ul li {
+	float: left; /* provoca la barra horizontal */
+	padding: 1px 10px;
+	margin: 5px auto;
+	
+}
+
+ul li a {
+	text-decoration: none;
+	border-radius: 10px;
+	color: white;
+	line-height: 20px; /* para que el texto de <a> quede centrado de manera vertical. Mismo valor que el height de <li> */
+	text-align: center;
+	padding: 5px 10px;
+	background-color: #222;
+	display: block;
+}
+
+#contenedor {
+	margin: 0px auto;
+	width: 600px;
+	height: 400px;
+	border-radius: 30px;
+	background-color: #ddd;
+
+}
+
+#menu {
+	margin: 0px auto;
+	width: 300px;
+	height: 45px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #bbb;
+	position: relative;
+	text-align: center;
+}
+#contenedorimagenes {
+	margin: 0px auto;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+}
+img{
+	border-radius: 30px;
+	box-shadow: #000 0px 0px 20px;
+}

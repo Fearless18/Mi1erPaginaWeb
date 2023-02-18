@@ -1,0 +1,71 @@
+﻿a:link
+{
+	color: rgb(80,80,255); 
+	text-decoration: none;
+}
+a:visited
+{
+	color: rgb(0,0,180); 
+} 
+a:active 
+{
+	color: rgb(255,255,255);
+}
+
+TD, TH 
+{
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: light;
+	color: rgb(0,0,0);
+}
+
+body
+{
+	font-size:10pt;
+	font-family: Verdana, Arial, Helvetica;
+	background-color: rgb(230,230,255);
+	color: rgb(30,30,30);
+	margin-left: 10.0px; 
+    margin-right: 0.0px; margin-top: 10.0px }
+
+}
+
+.info
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+	color: rgb(120,120,120);
+}
+
+
+h1
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(153,153,51);
+}
+h2
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(204,153,0); 
+}
+h3
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(0,102,153); 
+}
+h4
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(153,153,0);
+}
+h5
+{
+	font-family: Verdana, Arial, Helvetica;
+	color: rgb(255,153,0);
+}
+h6
+{
+	font-family: Times New Roman, Times;
+	color: rgb(51,102,204);
+}

@@ -1,0 +1,101 @@
+<div id="contenido">
+<h1>Nuestros productos</h1>
+<div id="botonHeladeras">Heladeras</div>
+<div id="botonEquipos">Equipos de música</div>
+<div id="contenedor"></div>
+
+<div id="listadoHeladeras">
+	<button id="boton"> copiar </button>
+	<div id="caja">jaja</div>
+	<h2>Heladeras</h2>
+	<h3>No Frost</h3>
+	<div class="producto">
+		<p>
+		<img src="img/heladera1.jpg" alt="Heladera Patrick" title="Heladera Patrick" />
+		<span class="marca">PATRICK</span>
+		HELADERA NO FROST PATRICK HPK310<br />
+		art. 12403<br />
+		Capacidad: 252 litros. Sistema No Frost. Estantes de cristal templado en refrigerador con borde antiderrame y estante de rejilla en freezer. Anaqueles superprofundos. Estantes en el freezer. Crisper de frutas y verduras. Patas niveladoras regulables.<br />
+		Precio online $3.934
+		</p>
+	</div>
+	<div class="producto">
+		<p>
+		<img src="img/heladera2.jpg" alt="Heladera Patrick" title="Heladera Patrick" />
+		<span class="marca">PATRICK</span>
+		HELADERA NO FROST PATRICK HPK310 MET<br />
+		art. 13304<br />
+		Capacidad: 252 litros. Sistema No Frost. Estantes de cristal templado en refrigerador con borde antiderrame y estante de rejilla en freezer. Anaqueles superprofundos. Estantes en el freezer. Crisper de frutas y verduras.<br />
+		Precio online $4.174
+		</p>
+	</div>
+	<div class="producto">
+		<p>
+		<img src="img/heladera3.jpg" alt="Heladera Electrolux" title="Heladera Electrolux" />
+		<span class="marca">ELECTROLUX</span>
+		HELADERA NO FROST ELECTROLUX DF-34<br />
+		art. 13451<br />
+		Heladera No Frost DF34. Características: Compartimiento Fast freezing: acelera el congelamiento de los alimentos. Huevera removible: con capacidad para 12 unidades. Estantes de vidrio templado removibles: 3 estantes internos super resistentes.<br />
+		Precio online $4.764
+		</p>
+	</div>
+	<h3>Convencionales</h3>
+	<div class="producto">
+		<p>
+		<img src="img/heladera4.jpg" alt="Heladera White Westinghouse" title="Heladera White Westinghouse" />
+		<span class="marca">WHITE WESTINGHOUSE</span>
+		HELADERA 2 FRIOS WHITE WESTINGHOUSE WW-226<br />
+		art. 14054<br />
+		Capacidad 239 Lt - Ciclica. Estantes Rejilla de Alta Resistencia. Estante Inferior Antiderrame. Descongelamiento Automático<br />
+		Precio online $2.799
+		</p>
+	</div>
+	<div class="producto">
+		<p>
+		<img src="img/heladera5.jpg" alt="Heladera Gafa" title="Heladera Gafa" />
+		<span class="marca">GAFA</span>
+		HELADERA 2 FRIOS GAFA HGF-340A<br />
+		art. 16444<br />
+		Capacidad: 284 litros brutos. Freezer Aluminizado. Heladera con freezer. Descongelamiento automático en la parte inferior. Clasificación Energética A. Contrapuerta de refrigerador con balcones transparentes. Estantes de rejilla de alta resist<br />
+		Precio online $2.879
+		</p>
+	</div>
+</div>
+
+<div id="listadoEquipos">
+	<h2>Equipos de música</h2>
+	<h3>Minicomponentes</h3>
+	<div class="producto">
+		<p>
+		<img src="img/equipo1.jpg" alt="Minicomponente Noblex" title="Minicomponente Noblex" />
+		<span class="marca">NOBLEX</span>
+		MINICOMPONENTE NOBLEX MNX-225<br />
+		art. 22397<br />
+		Potencia total: 2500 W PMPO. Reproduce: MP3, WMA, CD, CD-R / RW. Puerto USB para conexión de MP3 players. Funcion MP3 CREATOR
+		AUX-IN. Bandeja para 1 CD<br />
+		Precio online $1.199
+		</p>
+	</div>
+	<div class="producto">
+		<p>
+		<img src="img/equipo2.jpg" alt="Minicomponente Sony" title="Minicomponente Sony" />
+		<span class="marca">SONY</span>
+		MINICOMPONENTE SONY MHC-EC599<br />
+		art. 20733<br />
+		Siente la potencia sin límites con la nueva línea de audio Sony. El nuevo MHC-EC599 de 1300W de potencia y con función de grabación y reproducción de MP3 por USB te permite reproducir tus canciones favoritas con la increíble calidad de sonido Sony.<br />
+		Precio online $1.499
+		</p>
+	</div>
+	<div class="producto">
+		<p>
+		<img src="img/equipo3.jpg" alt="Minicomponente Philips" title="Minicomponente Philips" />
+		<span class="marca">PHILIPS</span>
+		MINICOMPONENTE PHILIPS FWM211X/77<br />
+		art. 44959<br />
+		Enriquecé tu experiencia de sonido con el MINICOMPONENTE PHILIPS FWM211X/77. MAX Sound para reforzar la potencia al instante. Control digital de sonido que optimiza todos los estilos de música. Potencia de salida total: 2200 W PMPO<br />
+		Precio online $1.499
+		</p>
+	</div>
+</div>
+</div>
+	

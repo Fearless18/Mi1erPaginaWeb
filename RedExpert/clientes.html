@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+<!-- #BeginTemplate "plantilla.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="Red Expert Consultora" />
+<meta name="keywords" content="Red Expert, Consultora, comunicación, éxito, eficiencia, soluciones, redes sociales, imagen corporativa" />
+<meta name="robots" content="index,FOLLOW" />
+<meta name="revisit-after" content="20 days" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="clientes-lightbox.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>  <!-- Validación JS de formularios -->
+<script type="text/javascript" src="js/messages_es.js"></script>  <!-- Mensajes de validación por defecto que serán mostrados si el programador no especifica uno -->  
+<script type="text/javascript" src="js/additional-methods.min.js"></script>  <!-- mas controles en formulario (e-mail "@") -->
+
+<!-- comienzo script lightbox de clientes -->
+<script> 
+$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+});
+</script>  
+<!-- final script lightbox de clientes -->
+
+<!-- Comienzo barra navegación -->
+<script>
+$(function() {
+     // grab the initial top offset of the navigation
+    var sticky_navigation_offset_top = $('#sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('#sticky_navigation').css({ 'position': 'fixed', 'top':0, 'left':0 });
+        } else {
+            $('#sticky_navigation').css({ 'position': 'relative' });
+        }  
+    };
+
+  // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+});</script>
+<!-- barra navegación - FIN -->
+
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados -->
+<script type="text/javascript"> 
+$(document).ready( function() {
+    var loc = document.location.href.split(/[\?#]/).shift().replace(/\/$/, '');
+    $("a").each(function() {
+        if (this.href == loc) $(this).addClass("selected");
+    });
+});</script>
+<!-- Resalta con el css 'selected' el boton en el que estamos ubicados - FIN -->
+
+<!-- #BeginEditable "doctitle" -->
+<title>* Red Expert * Consultora</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+.auto-style4 {
+	text-align: center;
+	background-color: #aEf1f6;
+}
+.auto-style5 {
+	background-color: #7b7;
+	text-align: center;
+	font-size: 11px;
+}
+.auto-style7 {
+	border-width: 0px;
+}
+</style>
+
+
+<!-- #EndEditable -->
+
+<style type="text/css">
+
+.auto-style1 {
+	background-color: #FFFFFF;
+}
+
+.auto-style6 {
+	background-color: #CCCCCC;
+}
+
+</style>
+</head>
+
+<body style="margin-left: 0px; margin-top: 0px; background-color: #666666;" onLoad="Seleccionado('redes')">
+<!-- #BeginEditable "body" -->
+<!-- #EndEditable -->
+<table style="width: 100%" cellpadding="0" cellspacing="0" class="auto-style6">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table align="center" class="auto-style1" style="width: 100%">
+			<tr>
+				<td style="text-align: center;"><img alt="" height="79" src="imagenes/logo.png" width="202" /></td>
+			</tr>
+			<tr>
+				<td style="text-align: center"><!-- this will be our navigation menu -->
+				<div id="demo_top_wrapper">    
+				    <div id="sticky_navigation_wrapper" align="center">
+    	    			<div id="sticky_navigation" align="center">
+        	    			<div class="demo_container" align="center">
+            				<ul>
+                    		<li><a href="index.html">Inicio</a></li>
+	                	    <li><a href="nosotros.html">Nosotros</a></li>
+    	        	        <li><a href="servicios.html">Servicios</a></li>
+            	        	<li><a href="clientes.html">Clientes</a></li>
+        	            	<li><a href="contactos.html">Contactos</a></li>
+                			</ul>
+        				    </div>
+    		    		</div>
+		    		</div>
+				</div>
+				</td>
+			</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td style="width: 1000px">
+			<table class="auto-style1" style="width: 100%" align="center">
+				<tr>
+					<td><!-- #BeginEditable "editable" -->
+<div>
+</div>
+
+<p><table align="center" style="width: 95%">
+	<tr>
+		<td style="text-align: center;"><span class="Noticia">Confían en nosotros:</span><br />
+		</td>
+	</tr>
+	<tr>
+		<td><br/>
+		<table align="center">
+			<tr>
+				<td style="height: 150px; width: 200px;	text-align: center;" class="auto-style6">
+				<a class="popup-with-zoom-anim" href="#DanielMartinez">
+				<img alt="" class="auto-style7" height="120" src="imagenes/daniel_martinez_radio.jpg" width="160"></a><br />
+				</td>
+				<td style="width: 15px" >
+				&nbsp;</td>
+				<td style="height: 150px; width: 200px" class="auto-style4"><a class="popup-with-move-anim" href="#IngSinFronteras">
+				<img alt="" height="130" src="imagenes/ingeniera_sin_fronteras_argentina.png" width="123"></a></td>
+			</tr>
+			<tr>
+				<td class="auto-style5"><strong><a class="popup-with-zoom-anim" href="#DanielMartinez">Daniel Martínez</a></strong></td>
+				<td>&nbsp;</td>
+				<td class="auto-style5"><strong><a class="popup-with-move-anim" href="#IngSinFronteras">Ingeniería Sin Fronteras Argentina</a>
+</strong></td>
+			</tr>
+			</table>
+		<br><br><br><br><br><br>
+		</td>
+	</tr>
+</table>
+		</p>
+<div id="DanielMartinez" class="zoom-anim-dialog mfp-hide">
+<table style="width: 100%" cellpadding="8">
+			<tr>
+				<td colspan="2"><h1>Daniel Martínez</h1></td>
+			</tr>
+			<tr>
+				<td><img alt="" class="auto-style7" height="120" src="imagenes/daniel_martinez_radio.jpg" width="160"></td>
+				<td><p>Consultor psicológico y conductor de “Buenas Compañías”, ciclo radial con más de 20 años de permanencia en el aire de amplitud modulada. <br/>
+	El mismo fue emitido por medios masivos de alcance nacional como Radio del Plata, Radio América y Radio Splendid entre otros. 
+	<br/>Actualmente, se transmite por Radio Cadena Eco AM 1220 de 00:00 a 02:00 de la madrugada.</p></td>
+			</tr>
+		</table></div>
+<div id="IngSinFronteras" class="zoom-anim-dialog mfp-hide">
+<table style="width: 100%" cellpadding="8">
+			<tr>
+				<td colspan="2"><h1>Ingeniería sin Fronteras – Argentina</h1></td>
+			</tr>
+			<tr>
+				<td><img alt="" height="130" src="imagenes/ingeniera_sin_fronteras_argentina.png" width="123"></td>
+				<td><p>Ingeniería Sin Fronteras Argentina (ISF-Argentina) es una asociación interdisciplinaria de cooperación para el desarrollo, sin compromisos 
+				partidarios ni religiosos, que trabaja investigando, promoviendo e implementando estudios y proyectos de ingeniería que permitan mejorar la calidad
+				 de vida de las personas a partir de un enfoque integral y profesional de los problemas.</p></td>
+			</tr>
+		</table>
+		
+</div>
+
+		
+	<!-- #EndEditable -->
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<table style="width: 100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>&nbsp;</td>
+		<td style="width: 1000px">
+			<table style="width: 100%; height:100%" cellpadding="5" class="socalo">
+				<tr>
+					<td style="width: 33%" valign="top">Redes Sociales<br />
+						<img alt="" height="25" src="imagenes/logofacebook.png" width="25" style="border-width: 0px;"> 
+					<a href="http://www.redexpertarg.blogspot.com.ar/" target="_blank"> 
+					<img alt="" height="25" src="imagenes/logo_blogger.gif" width="25" style="border-width: 0px;"></a></td>
+					<td valign="top">Mapa sitio<br />
+						<span><a href="index.html">
+					Inicio</a> . <a href="nosotros.html">Nosotros</a> .
+					<a href="servicios.html">Servicios</a> . <a href="clientes.html">
+					Clientes</a> . <a href="contactos.html">Contactos</a></span></td>
+					<td style="width: 33%" valign="top"><span>Contacto</span><br />
+						<span class="info">Celular: 15-2-451-1251.<br />
+					E-mail: <a href="mailto:redexpertcomunicacion@gmail.com">redexpertcomunicacion@gmail.com</a></span></td>
+				</tr>
+				<tr>
+					<td class="footer">&nbsp;</td>
+					<td class="footer">(C) 2014 - Red Expert</td>
+					<td class="footer" style="text-align:right;">Diseño
+					<a href="mailto:badfan18@yahoo.com.ar">Alejandro Biondi</a></td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</body>

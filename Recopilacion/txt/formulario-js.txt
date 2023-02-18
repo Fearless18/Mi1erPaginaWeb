@@ -1,0 +1,56 @@
+﻿<form name="f1" onsubmit="return validar();">
+<table>
+ <tr>
+  <td>Usuario</td>
+  <td><input type="text" id="usuario"></td>
+  <td><div id="mensaje_usuario"></div></td>
+ </tr>
+ <tr>
+  <td>Contraseña</td>
+  <td><input type="password" id="password"></td>
+  <td><div id="mensaje_password"></div></td>
+ </tr>
+ <tr>
+  <td>Repetir contraseña</td>
+  <td><input type="password" id="password2"></td>
+  <td><div id="mensaje_password2"></div></td>
+ </tr>
+ <tr>
+  <td>Edad</td>
+  <td><input type="text" id="edad"></td>
+  <td><div id="mensaje_edad"></div></td>
+ </tr>
+ <tr>
+  <td>E-mail</td>
+  <td><input type="text" id="email"></td>
+  <td><div id="mensaje_email"></div></td>
+ </tr>
+ <tr>
+  <td>País</td>
+  <td><select id="paises" style="width:100%;">
+	<option value="">Seleccion</option>
+	<option value="arg">Argentina</option>
+	<option value="bra">Brasil</option>
+	<option value="chi">Chile</option>
+	</select>
+  </td>
+  <td><div id="mensaje_paises"></div></td>
+ </tr>
+ <!-- Clase 09 - Checkbox-->
+ <tr>
+  <td>Acepto términos <br/>y condiciones</td>
+  <td><input type="checkbox" id="acepto"> </td>
+  <td><div id="mensaje_acepto"></div></td>
+ </tr>
+ <tr>
+  <td>Aceptaste sin leerlas, ¿no?</td>
+  <td><input type="radio" name="leido" id="si"> <label for="si">Si </label><br/> 
+	<input type="radio" name="leido" id="no"> <label for="no">No </label></td >
+  <td><div id="mensaje_leido"></div></td>
+ </tr>
+ <tr>
+  <td colspan="3" align="center"><br/><input type="submit" value="Enviar Datos"></td>
+ </tr>
+ </table>
+ </form>
+ <div id="mensaje"></div>

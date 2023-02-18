@@ -1,0 +1,5 @@
+<a href="#"><img src="img/auto2.jpg" width="20%" onmouseover="mostrar('Este es un auto');" onmouseout="mostrar('chau 1	');"></a>
+<br/>
+<a href="#"><img src="img/auto3.jpg" width="20%" onmouseover="mostrar('Este es otro auto');" onmouseout="mostrar('chauuu 2');"></a>
+<br/>
+<div id="caja" style="display:none; border:3px solid; backgound:#ff0; float:right;width:200px;heigth:100px;"></div>
