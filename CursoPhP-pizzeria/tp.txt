@@ -1,0 +1,38 @@
+Clientes
+id_cliente	int
+nombre		varchar(20)
+direccion	varchar(50)
+telefono	varchar(20)
+email		varchar(50)
+
+Pizzas
+id_pizza	int
+nombre		varchar(20)
+ingredientes varchar(70)
+tamaño		varchar(15)
+precio		float
+
+Pedidos
+id_pedido	int
+id_cliente	int
+fecha		date
+hora		time
+importe		float
+id_pizza1	int
+cant1		int
+id_pizza2	int
+cant2		int
+id_pizza3	int
+cant3		int
+
+Interfaz Cliente
+pizzeria xxxxx
+Ingresar Pedido (form pedido)
+Registrarse (form alta cliente)
+
+Interfaz Operador
+Listar pedidos
+Crear Gusto
+Borrar gusto
+Modificar Gusto
+Borrar Clientes

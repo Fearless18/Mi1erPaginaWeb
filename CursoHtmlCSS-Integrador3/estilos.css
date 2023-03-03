@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* selector universal */
+
+* {
+margin:0;
+padding:0;
+border:0;}
+
+
+/* selectores de etiquetas */
+
+body {
+background-image:url(imagenes/fondo.png);
+font-family:Geneva, Arial, Helvetica, sans-serif;
+color:#666666;
+font-size:11px;}
+
+a {
+text-decoration:none;
+color:#FF9900}
+
+
+li {
+list-style-type:none;
+float:left;
+margin-right:20px;
+color:#FFFFFF;
+font-size:16px;
+font-weight:bold;}
+
+h1 {
+background:url(imagenes/pelotitas.png) no-repeat left 7px;
+padding:0 0 5px 19px; /* arr  der  aba  izq */
+border-bottom:1px dotted #999999;
+margin-bottom:15px;
+font-size:23px;}
+
+h2 {
+padding:0 0 5px 0;
+border-bottom:1px dotted #999999;
+font-size:17px;
+margin:0 0 20px }
+
+/* selector de id  */
+
+#encabezado, #menu, #centro, #pie {
+width:960px;
+margin:auto;
+}
+
+
+#encabezado {
+height:200px;
+
+}
+
+#menu {
+width:930px;
+height:30px;
+background-image:url(imagenes/nav.png);
+border-left:1px solid #DD783B;
+border-right:1px solid #DD783B;
+padding:12px 0 0 30px;   /* arr  der  aba   izq  */
+}
+
+#centro {
+width:920px;
+height:560px;
+background-color:#FFFFFF;
+padding:20px;
+}
+
+ #pie {
+ width:930px;
+height:30px;
+background-color:#333333;
+border-top:3px solid #FF6600;
+color:#CCCCCC;
+padding:30px 0 0 30px;
+}
+
+#col1 {
+width:485px;
+height:410px;
+float:left;
+margin-top:15px;}
+
+#col2 {
+width:380px;
+height:420px;
+float:right;
+background-color:#E5E5E5;
+border:1px solid #999999;
+margin-bottom:15px;
+padding:10px;}
+
+#logos {
+width:894px;
+height:80px;
+border:1px solid #FFB380;
+clear:both;
+padding:20px 0 0 30px;
+
+-moz-border-radius:10px;  /* redondeado */
+
+/*  border-radius:10px;   */
+}
+
+/* selector desendentes */
+
+#logos img {
+margin-right:38px;
+opacity:0.5;
+filter:Alpha(opacity=50)}
+
+#logos img:hover {
+opacity:1;
+filter:Alpha(opacity=100)}
+
+#col1 img {
+margin:0 0 15px 15px;}
+
+#col1 p {
+margin:0 0 15px 18px;}
+
+#col2 p {
+margin:0 0 15px 0;
+border-bottom:1px dotted #333333;
+padding:0 0 10px 0}
+
+/* selector vinculos menu */
+
+#menu a {
+color:#FFFFFF}
+
+#menu a:hover {
+color:#666666}
+
+/* selector vinculos  */
+
+#pie a {
+color:#FFF}
+
+#pie a:hover {
+color:#FF9900}
+
+/* seleccor pseudo clases */
+
+#col2 p:first-line {
+font-weight:bold;
+font-size:10px;}
+
+#col2 p:hover {
+text-decoration:underline;}
+
+
+

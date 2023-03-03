@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="jquery-2.1.4.js"></script>
+	<script type="text/javascript">
+	
+	// cuando carga la página, llamo a la funcoin clickear
+	$(document).ready(clickear);
+
+	// defino la función clicker
+	function clickear () {
+		$('#boton').click(completar);
+	}
+	function completar () {
+		var copia = $('#caja').html();
+		$('#caja').html(copia+'</br>'+'HOlaaaa2');
+		$('#caja').css('color','#f00');
+	}
+
+	</script>
+</head>
+<body>
+<button id="boton"/> copiar </button>
+<div id="caja">jaja</div>
+
+</body>
+</html>
